@@ -26,8 +26,9 @@ class Jogo
             }
 
             Console.WriteLine("----------------------------------");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("Empate!");
-            Console.WriteLine("----------------------------------");
+            Console.ResetColor();
 
         }
         else if (escolhaJogador == ESCOLHA_PEDRA)
@@ -39,13 +40,17 @@ class Jogo
             {
                 Console.WriteLine("Papel");
                 Console.WriteLine("----------------------------------");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("O computador venceu.");
+                Console.ResetColor();
             }
             else if (escolhaComputador == ESCOLHA_TESOURA)
             {
                 Console.WriteLine("Tesoura");
                 Console.WriteLine("----------------------------------");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("Você venceu.");
+                Console.ResetColor();
             }
         }
         else if (escolhaJogador == ESCOLHA_PAPEL)
@@ -57,13 +62,17 @@ class Jogo
             {
                 Console.WriteLine("Tesoura");
                 Console.WriteLine("----------------------------------");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("O computador venceu.");
+                Console.ResetColor();
             }
             else if (escolhaComputador == ESCOLHA_PEDRA)
             {
                 Console.WriteLine("Pedra");
                 Console.WriteLine("----------------------------------");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("Você venceu.");
+                Console.ResetColor();
             }
         }
         else if (escolhaJogador == ESCOLHA_TESOURA)
@@ -75,14 +84,17 @@ class Jogo
             {
                 Console.WriteLine("Pedra");
                 Console.WriteLine("----------------------------------");
-
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("O computador venceu.");
+                Console.ResetColor();
             }
             else if (escolhaComputador == ESCOLHA_PAPEL)
             {
                 Console.WriteLine("Papel");
                 Console.WriteLine("----------------------------------");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("Você venceu.");
+                Console.ResetColor();
             }
         }
     }

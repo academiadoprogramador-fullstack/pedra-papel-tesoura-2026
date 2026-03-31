@@ -11,7 +11,7 @@ class Jogador
             Console.WriteLine("3 - Tesoura");
             Console.WriteLine("----------------------------------");
             Console.Write("Digite uma opção válida: ");
-            string strEscolhaJogador = Console.ReadLine();
+            string? strEscolhaJogador = Console.ReadLine();
 
             // se for uma escolha válida
             if (
