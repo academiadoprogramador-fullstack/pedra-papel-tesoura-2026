@@ -4,7 +4,7 @@
     {
         while (true)
         {
-            Console.Clear();
+            ExibirTitulo();
 
             int escolhaJogador = Jogador.ObterEscolha();
 
@@ -12,8 +12,27 @@
 
             Jogo.CompararEscolhas(escolhaJogador, escolhaComputador);
 
-            Console.ReadLine();
+            if (!JogadorDesejaContinuar())
+                break;
         }
+    }
+
+    static void ExibirTitulo()
+    {
+        Console.Clear();
+        Console.WriteLine("----------------------------------");
+        Console.WriteLine("Pedra, Papel, Tesoura");
+        Console.WriteLine("----------------------------------");
+    }
+
+    static bool JogadorDesejaContinuar()
+    {
+        Console.Write("Deseja continuar? (s/N): ");
+
+        if (Console.ReadLine()?.ToUpper() != "S")
+            return false;
+
+        return true;
     }
 }
 
